@@ -19,6 +19,10 @@ const Contact = () => {
     const onSubmit = async (data: any) => {
         setLoading(true)
 
+        if (errors.email && errors.message && errors.name) {
+            toast.error('Пожалуйста заполните все поля формы', { position: "bottom-left" })
+        }
+
         try {
             await emailjs.send('service_4ef8qy3', 'template_9v6y5tp', data, 'gNO8MPezIGBTtI2hb');
             toast.success('Твое сообщение было успешно доставлено!', {
@@ -30,19 +34,30 @@ const Contact = () => {
             toast.error('Ошибка отправки сообщения. Попробуйте позже.', {
                 position: "bottom-left",
             });
+            setLoading(false)
         }
-    };
+    }
 
-    errors.email && errors.message && errors.name && toast.error('Пожалуйста заполните все поля формы', { position: "bottom-left" })
-
+    const onClickButtonHandler = () => {
+        if (errors.email && errors.message && errors.name) {
+            toast.error('Пожалуйста заполните все поля формы', { position: "bottom-left" })
+        } else if (errors.email) {
+            toast.error('Пожалуйста укажите ваш email', { position: "bottom-left" })
+        } else if (errors.name) {
+            toast.error('Пожалуйста укажите ваше имя', { position: "bottom-left" })
+        } else if (errors.message) {
+            toast.error('Пожалуйста напишите что-нибудь', { position: "bottom-left" })
+        }
+    }
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => setIsVisible(entry.isIntersecting)
-        );
+        )
+
         observer.observe(ref.current);
         return () => observer.disconnect();
-    }, [isVisible]);
+    }, []);
 
 
     return (
@@ -70,7 +85,7 @@ const Contact = () => {
                                     <textarea  {...register('message', { required: true })} />
                                 </div>
 
-                                <button className={loading ? 'opacity-50 cursor-not-allowed' : ''} type="submit" disabled={loading}>
+                                <button onClick={() => onClickButtonHandler()} className={loading ? 'opacity-50 cursor-not-allowed' : ''} type="submit" disabled={loading}>
                                     {loading ? 'Отправляется...' : 'Отправить'}
                                 </button>
                             </form>
