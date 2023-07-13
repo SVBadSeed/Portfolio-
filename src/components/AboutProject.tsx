@@ -2,6 +2,8 @@ import Container from "./Container"
 
 import '../styles/global.css'
 
+import Tilty from 'react-tilty'
+
 const AboutProject = ({ prod }: any) => {
     const sentences = prod.desc.split('. ')
 
@@ -42,11 +44,11 @@ const AboutProject = ({ prod }: any) => {
                         </ul>
                     </div>
                     <a href={prod.url} className="cursor-pointer h-[350px]">
-                     
+                        <Tilty glare scale={1.05} maxGlare={0.2} className="h-full">
 
                             <img className="w-[700px] h-full" src={prod.image} alt="" />
                             <div className="text-center mt-4"> При клике на картинку можно посмотреть деплой проекта.</div>
-                      
+                        </Tilty>
                     </a>
                 </div>
                 <img className="absolute left-0 top-0 -z-10 min-h-full min-w-full w-full h-full" src='/images/color-sharp.png' alt="" />
