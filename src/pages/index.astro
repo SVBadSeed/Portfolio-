@@ -1,7 +1,10 @@
 ---
+import Banner from "../components/Banner";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to my portfolio.">
-	<main></main>
+	<main>
+		<Banner client:load />
+	</main>
 </Layout>
