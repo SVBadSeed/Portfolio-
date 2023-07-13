@@ -24,7 +24,6 @@ const Contact = () => {
             toast.success('Твое сообщение было успешно доставлено!', {
                 position: "bottom-left",
             });
-
             setLoading(false)
             reset();
         } catch (e) {
@@ -43,7 +42,8 @@ const Contact = () => {
         );
         observer.observe(ref.current);
         return () => observer.disconnect();
-    }, []);
+    }, [isVisible]);
+
 
     return (
         <section className="contact" id='connect'>
@@ -78,7 +78,7 @@ const Contact = () => {
                     </div>
                 </div>
             </Container>
-            {loading && <ToastContainer />}
+            <ToastContainer />
         </section>
     )
 }
