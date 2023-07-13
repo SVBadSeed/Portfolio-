@@ -48,7 +48,6 @@ const Banner = () => {
     }
 
     useEffect(() => {
-        console.log(ref)
         const observer = new IntersectionObserver(
             ([entry]) => setIsVisible(entry.isIntersecting)
         );
