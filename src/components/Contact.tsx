@@ -54,7 +54,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <div className={isVisible ? "fadeIn" : ""}>
-                            <h2 className='text-[30px] font-bold'>Напишите мне сообщение!</h2>
+                            <h2 className='text-[30px] font-bold mb-10'>Напишите мне сообщение!</h2>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div>
                                     <label>Имя:</label>
@@ -78,7 +78,7 @@ const Contact = () => {
                     </div>
                 </div>
             </Container>
-            <ToastContainer />
+            {loading && <ToastContainer />}
         </section>
     )
 }
