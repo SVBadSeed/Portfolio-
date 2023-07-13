@@ -593,6 +593,11 @@
 }
 
 
+.projects {
+    display: flex !important;
+}
+
+
 .proj:nth-child(1),
 .proj:nth-child(2),
 .proj:nth-child(3) {

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 
 import Container from "./Container"
 import ProjectCard from './ProjectCard'
@@ -32,7 +32,7 @@ const Projects = () => {
                                 </TabList>
                             </div>
                             {[0, 6].map((startIndex) => (
-                                <TabPanel key={startIndex} className="flex flex-wrap justify-between">
+                                <TabPanel key={startIndex} className="projects flex-wrap justify-between">
                                     {projects.slice(startIndex, startIndex + 6).map((item: any) => (
                                         <ProjectCard key={item.id} {...item} />
                                     ))}
