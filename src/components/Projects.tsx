@@ -8,7 +8,6 @@ import '../styles/global.css'
 import { projects } from '../data/projectsArr'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import 'react-tabs/style/react-tabs.css'
 
 const Projects = () => {
     const [isActive, setIsActive] = useState(0)
@@ -26,7 +25,7 @@ const Projects = () => {
                                 <TabList className="proj-tab bg-white bg-opacity-10 w-full ml-auto mr-auto mb-5 rounded-[50px] flex">
                                     {Array.from({ length: numberOfPages }).map((_, index) => (
                                         <Tab onClick={() => setIsActive(index)} className="proj-item" key={index}>
-                                            <a className={isActive === index ? "proj-link active w-full shadow2" : ""}>Страница {index + 1}</a>
+                                            <a className={isActive === index ? "proj-link active w-[475px] shadow2" : ""}>Страница {index + 1}</a>
                                         </Tab>
                                     ))}
                                 </TabList>

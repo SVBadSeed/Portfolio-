@@ -193,6 +193,7 @@
 
 .proj-tab {
     overflow: hidden;
+    width: 950px;
 }
 
 .proj-item {
@@ -200,7 +201,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 475px;
 
     border: none;
     border-color: none !important;
@@ -212,6 +213,7 @@
     background: #151515;
     z-index: 1;
 }
+
 
 .proj-link {
     display: block;
