@@ -30,7 +30,7 @@ const Skills = () => {
                                         <div className="circle-container relative flex justify-center items-center mb-6">
                                             <img className="z-10 absolute w-100" src={skill.image} alt="/" />
                                         </div>
-                                        <div className=" block z-20 absolute w-full text-xl">
+                                        <div className=" block z-20 absolute bottom-0 w-full text-xl">
                                             <div className="text-center">{skill.title}</div>
                                         </div>
                                     </SwiperSlide>
