@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header";
+import Footer from "../components/Footer.astro";
 
 export interface Props {
 	title: string;
@@ -19,13 +20,84 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header />
-		<slot />
+		<div class="wrapper">
+			<Header />
+			<slot />
+			<Footer />
+		</div>
 	</body>
 </html>
 <style is:global>
+	<style > @font-face {
+		font-family: Centra;
+		src: url(/fonts/Audiowide-Regular.ttf);
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Audiowide-Regular, sans-serif;
+
+		color: #fff;
+		background-color: #121212;
+
+		font-weight: 400;
+		overflow-x: hidden;
+	}
+
 	* {
-		padding: 0;
 		margin: 0;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+		padding: 0;
+		line-height: normal;
+	}
+
+	p,
+	a,
+	li,
+	button,
+	ul {
+		margin: 0;
+		padding: 0;
+		line-height: normal;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	button {
+		border: 0;
+		background-color: transparent;
+	}
+
+	input:focus,
+	textarea:focus,
+	select:focus {
+		outline: none;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+
+		min-height: 100vh;
 	}
 </style>
