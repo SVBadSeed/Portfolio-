@@ -1,5 +1,3 @@
-import React from "react"
-
 import { useState, useEffect } from 'react'
 
 import Container from "./Container";
@@ -23,7 +21,7 @@ const Header = () => {
     }, [])
 
     return (
-        <header className={scrolled ? 'px-0 py-24 fixed w-full top-0 transition 0.32s ease-in-out scroll z-10 bg-[#121212]' : 'px-0 py-24 fixed w-full top-0 transition 0.32s ease-in-out z-10'}>
+        <header className={scrolled ? 'px-0 py-4 fixed w-full top-0 transition 0.32s ease-in-out scroll z-10 bg-[#121212]' : 'px-0 py-24 fixed w-full top-0 transition 0.32s ease-in-out z-10'}>
             <Container>
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl">ПОРТФОЛИО</h1>
@@ -41,7 +39,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <a href="https://t.me/Masthead1">
-                                    <img className="rounded-full" src="/images/nav-icon2.svg" alt="telegram" />
+                                    <img className="rounded-full" src="../images/nav-icon2.svg" alt="telegram" />
                                 </a>
                             </li>
                             <li>
