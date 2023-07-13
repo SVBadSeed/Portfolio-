@@ -47,8 +47,8 @@ const Banner = () => {
         }
     }
 
-
     useEffect(() => {
+        console.log(ref)
         const observer = new IntersectionObserver(
             ([entry]) => setIsVisible(entry.isIntersecting)
         );
@@ -66,7 +66,7 @@ const Banner = () => {
                             <span className="inline-block text-center"
                                 data-period="1000"
                                 data-rotate='["Фронтенд разработчик"]'>
-                                <span className="inline-block wrap"></span>
+                                <span className="inline-block wrap">{text}</span>
                             </span>
                         </h1>
                         <p className="text-gray-400 text-4 w-10/12">Фронтенд-разработкой занимаюсь примерно 2 года.
