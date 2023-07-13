@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 import Container from "./Container"
 
-import TrackVisibility from 'react-on-screen'
+
 
 const Banner = () => {
 
@@ -12,9 +12,8 @@ const Banner = () => {
         <section className="bg-[url('/images/banner-bg.png')] bg-cover bg-no-repeat bg-top-center p-fl h-screen" id='home'>
             <Container>
                 <div className="flex justify-between items-center">
-                    <TrackVisibility>
-                        {({ isVisible }) =>
-                            <div className={isVisible ? "fadeIn max-w-[650px]" : "max-w-2xl"}>
+                  
+                            <div className= "fadeIn max-w-[650px]">
                                 <span className="font-bold bg-gradient-to-r from-pink-600/[.5] via-purple-600/[.5] to-indigo-700/[.5] bg-opacity-50 inline-block mb-4 p-2.5 tracking-wide border-2 border-white border-opacity-50">Добро пожаловать на мое портфолио</span>
                                 <h1 className="text-[50px] tracking-wide mb-5 block font-bold txt-rotate">{`Привет! я Анатолий, `}
                                     <span className="inline-block text-center"
@@ -28,14 +27,13 @@ const Banner = () => {
                                     Это мое портфолио и оно включает в себя мои навыки и проекты, а так же предоставляет возможность написать мне на почту.
                                     Спасибо за уделенное время!</p>
                                 <button className="text-4 flex items-center mt-14" >Давайте пообщаемся! <img className="ml-3 w-[35px] h-[35px]" src='/images/arrow-right.png' alt="arrow" /> <i aria-hidden="true"></i></button>
-                            </div>}
-                    </TrackVisibility>
-                    <TrackVisibility>
-                        {({ isVisible }) =>
-                            <div className={isVisible ? "zoomIn" : ""}>
+                            </div>
+                  
+                      
+                            <div className= "zoomIn" >
                                 <img className="animate-updown w-[512px]" src='/images/skara.webp' alt="banner Img" />
-                            </div>}
-                    </TrackVisibility>
+                            </div>
+                  
                 </div>
             </Container>
         </section>
