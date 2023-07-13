@@ -21,7 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<div class="wrapper">
-			<Header />
+			<Header client:load />
 			<slot />
 			<Footer />
 		</div>
