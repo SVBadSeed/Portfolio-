@@ -591,3 +591,10 @@
 .contact form button:hover::before {
     width: 100%;
 }
+
+
+.proj:nth-child(1),
+.proj:nth-child(2),
+.proj:nth-child(3) {
+    margin-bottom: 20px;
+}

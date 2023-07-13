@@ -11,7 +11,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 
 const Projects = () => {
-
     const [isActive, setIsActive] = useState(0)
     const numberOfPages = Math.ceil(projects.length / 6)
 
@@ -33,7 +32,7 @@ const Projects = () => {
                                 </TabList>
                             </div>
                             {[0, 6].map((startIndex) => (
-                                <TabPanel key={startIndex} className="grid grid-cols-3 grid-rows-2 gap-4 self-center justify-items-center">
+                                <TabPanel key={startIndex} className="flex flex-wrap justify-between">
                                     {projects.slice(startIndex, startIndex + 6).map((item: any) => (
                                         <ProjectCard key={item.id} {...item} />
                                     ))}
