@@ -1,4 +1,4 @@
-const Container = ({ children }: any) => {
+const Container = ({children}: any) => {
     return (
         <div className="mx-auto max-w-1200 px-2">
             {children}

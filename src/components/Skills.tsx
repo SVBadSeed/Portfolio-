@@ -2,12 +2,12 @@ import Container from "./Container"
 
 import '../styles/global.css'
 
-import { skills } from "../data/skillsArr"
+import {skills} from "../data/skillsArr"
 
 import 'swiper/css'
 import 'swiper/css/navigation'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Navigation} from 'swiper/modules'
 
 const Skills = () => {
 
@@ -21,14 +21,15 @@ const Skills = () => {
                             <p className="text-gray-400 text-4 mt-3.5 mb-16">Тут отображаются все навыки освоенные мной.<br>
                             </br>Другие технологии по типу 'git' не включены в этом список.</p>
                             <Swiper className="h-64"
-                                speed={700}
-                                modules={[Navigation]}
-                                navigation={true}
-                                slidesPerView={3}>
+                                    speed={700}
+                                    modules={[Navigation]}
+                                    navigation={true}
+                                    slidesPerView={3}>
                                 {skills.map((skill, i) => (
                                     <SwiperSlide key={i}>
-                                        <div className="circle-container relative flex justify-center items-center mb-6">
-                                            <img className="z-10 absolute w-100" src={skill.image} alt="/" />
+                                        <div
+                                            className="circle-container relative flex justify-center items-center mb-6">
+                                            <img className="z-10 absolute w-100" src={skill.image} alt="/"/>
                                         </div>
                                         <div className=" block z-20 absolute bottom-0 w-full text-xl">
                                             <div className="text-center">{skill.title}</div>
@@ -40,7 +41,7 @@ const Skills = () => {
                     </div>
                 </div>
             </Container>
-            <img className="absolute top-1/4 z-m4 w-2/5 bottom-0" src='/images/color-sharp.png' alt="/" />
+            <img className="absolute top-1/4 z-m4 w-2/5 bottom-0" src='/images/color-sharp.png' alt="/"/>
         </section>
     )
 }

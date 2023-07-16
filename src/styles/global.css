@@ -55,28 +55,28 @@
 .glowing span:nth-child(3n + 1):before {
     background: rgba(170, 54, 124, 1);
     box-shadow: 0 0 20px rgba(170, 54, 124, 1),
-        0 0 40px rgba(170, 54, 124, 1),
-        0 0 60px rgba(170, 54, 124, 1),
-        0 0 80px rgba(170, 54, 124, 1),
-        0 0 8px rgba(170, 54, 124, .1);
+    0 0 40px rgba(170, 54, 124, 1),
+    0 0 60px rgba(170, 54, 124, 1),
+    0 0 80px rgba(170, 54, 124, 1),
+    0 0 8px rgba(170, 54, 124, .1);
 }
 
 .glowing span:nth-child(3n + 2):before {
     background: rgba(74, 47, 189, 1);
     box-shadow: 0 0 20px rgba(74, 47, 189, 1),
-        0 0 40px rgba(74, 47, 189, 1),
-        0 0 60px rgba(74, 47, 189, 1),
-        0 0 80px rgba(74, 47, 189, 1),
-        0 0 8px rgba(74, 47, 189, .1);
+    0 0 40px rgba(74, 47, 189, 1),
+    0 0 60px rgba(74, 47, 189, 1),
+    0 0 80px rgba(74, 47, 189, 1),
+    0 0 8px rgba(74, 47, 189, .1);
 }
 
 .glowing span:nth-child(3n + 3):before {
     background: rgba(0, 226, 255, 1);
     box-shadow: 0 0 20px rgba(0, 226, 255, 1),
-        0 0 40px rgba(0, 226, 255, 1),
-        0 0 60px rgba(0, 226, 255, 1),
-        0 0 80px rgba(0, 226, 255, 1),
-        0 0 8px rgba(0, 226, 255, .1);
+    0 0 40px rgba(0, 226, 255, 1),
+    0 0 60px rgba(0, 226, 255, 1),
+    0 0 80px rgba(0, 226, 255, 1),
+    0 0 8px rgba(0, 226, 255, .1);
 }
 
 
@@ -195,7 +195,7 @@
     overflow: hidden;
     width: 950px;
 
-    
+
 }
 
 .proj-item {
@@ -349,10 +349,9 @@
 }
 
 
-.txt-rotate>.wrap {
+.txt-rotate > .wrap {
     border-right: 0.08em solid #666;
 }
-
 
 
 .fadeIn {
@@ -458,7 +457,7 @@
 .rotate-border::before {
     content: "";
     background-image: conic-gradient(#ff0052 20deg,
-            transparent 120deg);
+    transparent 120deg);
     width: 400px;
     height: 400px;
     position: absolute;
@@ -472,7 +471,7 @@
 
 .rotate-border2::before {
     background-image: conic-gradient(#0085b9 20deg,
-            transparent 120deg);
+    transparent 120deg);
 }
 
 .rotate-border::after {

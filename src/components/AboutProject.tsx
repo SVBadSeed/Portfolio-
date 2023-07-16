@@ -4,13 +4,13 @@ import '../styles/global.css'
 
 import Tilty from 'react-tilty'
 
-const AboutProject = ({ prod }: any) => {
+const AboutProject = ({prod}: any) => {
     const sentences = prod.desc.split('. ')
 
     return (
         <>
             <div className="flex justify-center items-center w-full min-h-screen absolute overflow-hidden -z-10">
-                {new Array(1, 2, 3, 4, 5, 6, 7, 8).map((_) => (
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((_) => (
                     <div key={_} className="glowing">
                         <span></span>
                         <span></span>
@@ -43,15 +43,21 @@ const AboutProject = ({ prod }: any) => {
 
                         </ul>
                     </div>
-                    <a href={prod.url} className="cursor-pointer h-[350px]">
+                    <a href={prod.url} target="_blank" className="cursor-pointer h-[350px]">
                         <Tilty glare scale={1.05} maxGlare={0.2} className="h-full">
-
-                            <img className="w-[700px] h-full" src={prod.image} alt="" />
-                            <div className="text-center mt-4"> При клике на картинку можно посмотреть деплой проекта.</div>
+                            <img className="w-[700px] h-full" src={prod.image} alt=""/>
                         </Tilty>
                     </a>
                 </div>
-                <img className="absolute left-0 top-0 -z-10 min-h-full min-w-full w-full h-full" src='/images/color-sharp.png' alt="" />
+                <div className="flex justify-end gap-x-8 relative right-[100px]">
+                    <div className='self-end'>При клике на картинку можно посмотреть деплой проекта или исходный код.
+                    </div>
+                    <img className='w-[300px]' src="/images/zigzag.png"
+                         alt="zigzag-arrow"/>
+                </div>
+
+                <img className="absolute left-0 top-0 -z-10 min-h-full min-w-full w-full h-full"
+                     src='/images/color-sharp.png' alt=""/>
             </Container>
         </>
     )
