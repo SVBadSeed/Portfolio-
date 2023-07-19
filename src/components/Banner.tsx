@@ -61,7 +61,7 @@ const Banner = () => {
         <section className="bg-[url('/images/banner-bg.png')] bg-cover bg-no-repeat bg-top-center p-fl h-screen"
                  id='home'>
             <Container>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center h-[365px]">
                     <div ref={ref} className={isVisible ? "fadeIn max-w-[650px]" : "max-w-[650px]"}>
                         <span
                             className="font-bold bg-gradient-to-r from-pink-600/[.5] via-purple-600/[.5] to-indigo-700/[.5] bg-opacity-50 inline-block mb-4 p-2.5 tracking-wide border-2 border-white border-opacity-50">Добро пожаловать на мое портфолио</span>
@@ -83,7 +83,7 @@ const Banner = () => {
                     </div>
 
                     <div className={isVisible ? "zoomIn" : ""}>
-                        <img className="animate-updown w-[512px]" src='/images/skara.webp' alt="banner Img"/>
+                        <img className="animate-updown w-[512px]" src='/images/octopus.png' alt="banner Img"/>
                     </div>
 
                 </div>
