@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="138bf227-a6f0-40f6-a2ed-fd0e0f9dd1da" name="Changes" comment="refactoring code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutProject.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutProject.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/project/[...id].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/project/[...id].astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,8 @@
       <updated>1689242675291</updated>
       <workItem from="1689242677559" duration="20000" />
       <workItem from="1689523628955" duration="3923000" />
-      <workItem from="1689729304088" duration="316000" />
+      <workItem from="1689729304088" duration="628000" />
+      <workItem from="1689730055148" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring code">
       <created>1689528544130</created>
@@ -64,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689528544130</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactoring code">
+      <created>1689729885420</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689729885420</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

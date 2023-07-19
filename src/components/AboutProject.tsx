@@ -38,7 +38,7 @@ const AboutProject = ({prod}: any) => {
                         </h2>
                         <ul className="list-disc ml-4">
                             {prod.stack.map((item: string, i: number) => (
-                                <li key={i}>{item}</li>
+                                <li className="mb-2" key={i}>{item}</li>
                             ))}
 
                         </ul>
@@ -49,7 +49,7 @@ const AboutProject = ({prod}: any) => {
                         </Tilty>
                     </a>
                 </div>
-                <div className="flex justify-end gap-x-8 relative right-[100px]">
+                <div className="flex justify-end gap-x-8 relative right-[100px] mb-[80px]">
                     <div className='self-end'>При клике на картинку можно посмотреть деплой проекта или исходный код.
                     </div>
                     <img className='w-[300px]' src="/images/zigzag.png"
