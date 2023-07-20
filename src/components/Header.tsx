@@ -33,8 +33,9 @@ const Header = () => {
                     <label className='menu-button-container' htmlFor="menu-toggle">
                         <div className='menu-button' onClick={() => setBurgerClick(!burgerClick)}></div>
                     </label>
-                    <nav className={burgerClick ? "flex menu" : "flex menu max-md:hidden"}>
-                        <div className='flex max-md:block max-md:max-w-[500px] max-md:w-full mx-auto max-md:text-right'>
+                    <nav className={burgerClick ? "flex menu max-md:hidden" : "flex menu max-md:hidden"}>
+                        <div
+                            className='flex max-md:block max-md:max-w-[500px] max-md:w-full mx-auto max-md:text-right max-phone:max-w-[330px]'>
                             <ul className="flex justify-between gap-8 items-center mr-8 max-md:mr-0 max-md:my-4 max-md:flex-col max-md:gap-0 max-md:justify-end max-md:items-end">
                                 <li><a className={activeLink === 'home' ? 'opacity-100' : 'opacity-70'}
                                        onClick={() => setActiveLink('home')} href="/#home">Главная</a></li>
@@ -60,7 +61,8 @@ const Header = () => {
                                     </a>
                                 </li>
                             </ul>
-                            <div className='px-2 py-2 ml-8 border-solid border-2 border-white max-md:my-4 max-md:inline-block'>
+                            <div
+                                className='px-2 py-2 ml-8 border-solid border-2 border-white max-md:my-4 max-md:inline-block'>
                                 <a
                                     href="/#connect">Давайте свяжемся</a>
                             </div>
