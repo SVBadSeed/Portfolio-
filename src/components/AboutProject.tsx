@@ -30,7 +30,7 @@ const AboutProject = ({prod}: any) => {
                         </h2>
                         <div className="mb-6">
                             {sentences.map((sentence: string, index: number) => (
-                                <p className="max-md:text-[14px]" key={index}>{sentence.trim()}. </p>
+                                <p className="max-md:text-[14px]" key={index}>{sentence.trim()}</p>
                             ))}
                         </div>
                         <h2 className="rotate-border rotate-border2 p-4 mb-6">
