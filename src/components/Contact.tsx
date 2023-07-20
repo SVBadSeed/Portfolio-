@@ -60,11 +60,10 @@ const Contact = () => {
         return () => observer.disconnect()
     }, [])
 
-
     return (
         <section className="contact" id='connect'>
             <Container>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between max-md:flex-col">
                     <div>
                         <img className={isVisible ? "zoomIn w-[700px]" : "w-[700px]"} src='/images/space.png'
                              alt="Contact Us"/>
