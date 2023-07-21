@@ -124,6 +124,12 @@
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    .navShow {
+        display: none !important;
+    }
+}
+
 @media (max-width: 450px) {
     .circle-container {
         height: 100px;

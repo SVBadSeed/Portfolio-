@@ -33,7 +33,7 @@ const Header = () => {
                     <label className='menu-button-container' htmlFor="menu-toggle">
                         <div className='menu-button' onClick={() => setBurgerClick(!burgerClick)}></div>
                     </label>
-                    <nav className={burgerClick ? "flex menu max-md:hidden" : "flex menu max-md:hidden"}>
+                    <nav className={burgerClick ? "flex menu" : "flex navShow"}>
                         <div
                             className='flex max-md:block max-md:max-w-[500px] max-md:w-full mx-auto max-md:text-right max-phone:max-w-[330px]'>
                             <ul className="flex justify-between gap-8 items-center mr-8 max-md:mr-0 max-md:my-4 max-md:flex-col max-md:gap-0 max-md:justify-end max-md:items-end">
