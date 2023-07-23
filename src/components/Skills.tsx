@@ -20,8 +20,8 @@ const Skills = () => {
                             <h2 className="text-5xl font-bold max-md:text-[40px]">Навыки</h2>
                             <p className="text-gray-400 text-4 mt-3.5 mb-16 max-md:text-base max-phone:mb-4">Тут
                                 отображаются все
-                                навыки освоенные мной.<br>
-                                </br>Другие технологии по типу 'git' не включены в этом список.</p>
+                                навыки, освоенные мной.<br>
+                                </br>Другие технологии по типу 'git' не включены в этот список.</p>
                             <Swiper className="h-64"
                                     speed={700}
                                     modules={[Navigation]}

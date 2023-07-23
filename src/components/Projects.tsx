@@ -19,9 +19,8 @@ const Projects = () => {
                 <div>
                     <h2 className="text-5xl text-bold text-center max-md:text-[40px]">Проекты</h2>
                     <p className="text-gray-300 text-lg ml-auto mr-auto mt-3.5 mb-8 text-center w-4/6 max-md:text-base">Тут
-                        находятся все
-                        мои проекты которые я когда либо делал. Кроме самых первых :) На них можно переходить и
-                        ознакомиться с ними более подробно.</p>
+                        находятся все мои проекты, которые я когда-либо делал. На них можно переходить и ознакамливаться
+                        с ними более подробно.</p>
                     <div
                         className=" ml-auto mr-auto mt-0 mb-0 flex justify-center bg-color-[rgb(255 255 255 / 10%)] rounded-[50px]">
                         <Tabs>
