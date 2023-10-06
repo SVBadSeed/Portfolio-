@@ -75,11 +75,9 @@ const Banner = () => {
                             </span>
                         </h1>
                         <p className="text-gray-400 text-4 w-10/12 max-md:w-full">Фронтенд-разработкой занимаюсь
-                            примерно 3 года.
-                            2.2 года работал в крупной компании.
+                            примерно 1 год.
                             Это мое портфолио и оно включает в себя мои навыки и проекты, а так же предоставляет
-                            возможность написать мне на почту.
-                            Спасибо за уделенное время!</p>
+                            возможность написать мне на почту.</p>
                         <div className="text-4 flex items-center mt-14 max-md:justify-center">Давайте пообщаемся! <img
                             className="ml-3 w-[35px] h-[35px]" src='/images/arrow-right.png' alt="arrow"/> <i
                             aria-hidden="true"></i></div>
